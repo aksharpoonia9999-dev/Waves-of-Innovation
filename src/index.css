@@ -1,0 +1,285 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white-tp: #ffffff0f;
+  --color-white28: #ffffff47;
+  --color-white3: #ffffff08;
+  --color-white12: #ffffff1f;
+  --color-primary-purple: #8e2ee0;
+
+  --radius-20: 20px;
+  --radius-60: 60px;
+  --radius-90: 90px;
+  --radius-114: 114px;
+
+  --leading-100: 100%;
+  --leading-120: 120%;
+  --leading-121: 121%;
+  --leading-144: 144%;
+
+  --text-custom-2xl: 28px;
+
+  --background-image-gray-gradient: linear-gradient(
+    91.81deg,
+    rgba(255, 255, 255, 0.1) -235.86%,
+    rgba(255, 255, 255, 0.28) -164.51%,
+    rgba(255, 255, 255, 0.1) -72.26%,
+    rgba(255, 255, 255, 0.28) -0.19%,
+    rgba(255, 255, 255, 0.1) 94.4%
+  );
+
+  --background-image-border-gradient: linear-gradient(
+    94.09deg,
+    rgba(255, 255, 255, 0.1) -7.43%,
+    rgba(255, 255, 255, 0.28) 15.39%,
+    rgba(255, 255, 255, 0.1) 44.9%,
+    rgba(255, 255, 255, 0.28) 67.95%,
+    rgba(255, 255, 255, 0.1) 98.21%
+  );
+
+
+  --background-image-purple-gradient: linear-gradient(
+    90deg,
+    rgba(142, 46, 224, 0) 0%,
+    #8e2ee0 52.4%,
+    rgba(142, 46, 224, 0) 100%
+  );
+
+  --background-image-ppg: linear-gradient(
+    91.05deg,
+    #8e2ee0 7.21%,
+    #af7ef4 86.3%
+  );
+
+  --background-image-ppg2: linear-gradient(
+    42.59deg,
+    #8e2ee0 16.29%,
+    #af7ef4 77.08%
+  );
+
+  --shadow-icon: 0px 4px 54px 0px #8e2ee0;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/public/font/neue-montreal/NeueMontreal-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/public/font/neue-montreal/NeueMontreal-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/public/font/neue-montreal/NeueMontreal-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/public/font/neue-montreal/NeueMontreal-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Neue Montreal", sans-serif;
+}
+
+.card-glow > span {
+  position: absolute;
+  left: var(--gx);
+  top: var(--gy);
+  translate: -50% -50%;
+  border-radius: 50%;
+  opacity: 0;
+  scale: 0.55;
+  transition:
+    opacity 0.35s ease,
+    scale 0.45s ease;
+}
+
+.card-glow {
+  --gx: 82%;
+  --gy: -4%;
+  --gs: 1;
+}
+
+.glow-far {
+  --d: 250ms;
+  width: calc(150% * var(--gs));
+  aspect-ratio: 1.15;
+  background: radial-gradient(
+    closest-side,
+    rgba(115, 36, 200, 0.55) 0%,
+    rgba(98, 28, 175, 0.4) 35%,
+    rgba(66, 20, 125, 0.18) 65%,
+    rgba(40, 12, 80, 0) 100%
+  );
+}
+.glow-wash {
+  --d: 200ms;
+  width: calc(130% * var(--gs));
+  aspect-ratio: 1.25;
+  background: radial-gradient(
+    closest-side,
+    rgba(138, 44, 222, 0.8) 0%,
+    rgba(135, 42, 220, 0.5) 45%,
+    rgba(130, 42, 215, 0.16) 75%,
+    rgba(130, 42, 215, 0) 100%
+  );
+}
+.glow-body {
+  --d: 150ms;
+  width: calc(108% * var(--gs));
+  aspect-ratio: 1.45;
+  background: radial-gradient(
+    closest-side,
+    rgba(165, 80, 244, 0.95) 0%,
+    rgba(152, 62, 234, 0.68) 45%,
+    rgba(142, 46, 224, 0.22) 78%,
+    rgba(142, 46, 224, 0) 100%
+  );
+}
+.glow-bright {
+  --d: 100ms;
+  width: calc(88% * var(--gs));
+  aspect-ratio: 1.75;
+  background: radial-gradient(
+    closest-side,
+    rgba(205, 160, 251, 1) 0%,
+    rgba(182, 124, 247, 0.75) 50%,
+    rgba(160, 80, 240, 0.2) 80%,
+    rgba(160, 80, 240, 0) 100%
+  );
+}
+.glow-hot {
+  --d: 50ms;
+  width: calc(66% * var(--gs));
+  aspect-ratio: 2.1;
+  background: radial-gradient(
+    closest-side,
+    rgba(242, 232, 255, 1) 0%,
+    rgba(218, 188, 253, 0.8) 45%,
+    rgba(188, 140, 249, 0.2) 80%,
+    rgba(188, 140, 249, 0) 100%
+  );
+}
+.glow-core {
+  --d: 0ms;
+  width: calc(50% * var(--gs));
+  aspect-ratio: 2.4;
+  filter: blur(4px);
+  background: radial-gradient(
+    closest-side,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.97) 38%,
+    rgba(238, 224, 255, 0.55) 68%,
+    rgba(238, 224, 255, 0) 100%
+  );
+}
+.card-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background: radial-gradient(
+    ellipse 70% 80% at 83% 0%,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(190, 140, 250, 0.55) 40%,
+    rgba(142, 46, 224, 0) 75%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+}
+
+.card-icon {
+  width: fit-content;
+  transition: filter 0.5s ease;
+}
+.card-icon stop {
+  transition:
+    stop-color 0.5s ease,
+    stop-opacity 0.5s ease;
+}
+
+@keyframes glow-breathe {
+  0%,
+  100% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.12;
+  }
+}
+
+@media (hover: hover) {
+  .group:hover .card-glow > span {
+    opacity: 1;
+    scale: 1;
+    transition:
+      opacity 0.7s ease var(--d),
+      scale 1.1s cubic-bezier(0.22, 1, 0.36, 1) var(--d);
+  }
+  .group:hover .glow-core {
+    animation: glow-breathe 3.4s ease-in-out 1.1s infinite;
+  }
+  .group:hover .glow-hot {
+    animation: glow-breathe 3.4s ease-in-out 1.4s infinite;
+  }
+  .group:hover .card-ring {
+    opacity: 1;
+  }
+
+  .group:hover .card-icon {
+    filter: drop-shadow(0 4px 24px rgba(142, 46, 224, 0.85));
+  }
+  .group:hover .card-icon stop:first-child {
+    stop-color: #b98cf6;
+    stop-opacity: 1;
+  }
+  .group:hover .card-icon stop:last-child {
+    stop-color: #8e2ee0;
+    stop-opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-glow > span,
+  .card-ring,
+  .card-icon,
+  .card-icon stop {
+    transition: none;
+    animation: none !important;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
