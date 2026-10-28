@@ -120,7 +120,7 @@ const Footer = () => {
             © 2024-{new Date().getFullYear()} re:cinq. All Rights Reserved.
           </p>
 
-          <ul className="flex min-w-0 flex-1 basis-72 flex-wrap items-center gap-x-3 gap-y-2">
+          <ul className="flex min-w-0 flex-1 basis-72 flex-wrap items-center gap-x-3 gap-y-2 justify-start min-[774px]:justify-end">
             {legalLinks.map((item, index) => (
               <li key={item} className="flex max-w-full items-center gap-3">
                 {index !== 0 && (

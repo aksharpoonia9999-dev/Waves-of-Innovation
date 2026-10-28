@@ -30,7 +30,7 @@ const HubSectionOne = () => {
                 Native. Access the shared language, historical context, and
                 patterns to lead with certainty.
               </ParagraphOne>
-              <div className="w-full flex gap-4 mt-7.25 lg:justify-end justify-center flex-wrap">
+              <div className="w-full flex gap-4 mt-7.25 justify-center flex-wrap">
                 <ButtonPurple className="max-w-50.25 w-full">
                   Explore the Book
                 </ButtonPurple>
