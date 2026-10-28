@@ -14,27 +14,38 @@ const HubSectionSix = () => {
       >
         <div className="row w-full">
           <div className="content w-full flex flex-col items-center justify-center pt-1.5 sm:pt-3 md:pt-6 lg:pt-9">
-            <div className="writers max-w-64.25 w-full flex items-center justify-center gap-5 sm:gap-7">
+            <div
+              data-aos="zoom-in"
+              className="writers max-w-64.25 w-full flex items-center justify-center gap-5 sm:gap-7"
+            >
               <img
                 width="114"
                 height="163"
-                className="object-cover"
+                className="animate-float-slow object-cover"
                 src={WriterImgOne}
                 alt="writer"
               />
               <img
                 width="114"
                 height="163"
-                className="object-cover"
+                className="animate-float-slow-alt object-cover"
                 src={WriterImgTwo}
                 alt="writer"
               />
             </div>
-            <HeadingTwo className="mt-1.5 text-center">
+            <HeadingTwo
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="mt-1.5 text-center"
+            >
               A Note From The W<span className="text-[#E7D3F9]">r</span>
               <span className="text-[#DEC2F6]">iters</span>
             </HeadingTwo>
-            <ParagraphOne className="max-w-167 w-full text-center text-white/80 mt-[clamp(15px,3vw,25px)]">
+            <ParagraphOne
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="max-w-167 w-full text-center text-white/80 mt-[clamp(15px,3vw,25px)]"
+            >
               “Having navigated the Cloud Native wave, the shift to AI Native
               feels familiar. We have seen firsthand the predictable patterns
               that lead to costly mistakes and stalled projects.{" "}
@@ -45,7 +56,11 @@ const HubSectionSix = () => {
               architectural decisions.”
             </ParagraphOne>
 
-            <div className="names flex items-center justify-center mt-2 gap-2 max-w-48 w-full">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="names flex items-center justify-center mt-2 gap-2 max-w-48 w-full"
+            >
               <p className="italic font-medium text-base leading-120 text-white xl:leading-6.25  text-nowrap">
                 Pini Reznik
               </p>

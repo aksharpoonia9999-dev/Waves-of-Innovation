@@ -47,11 +47,17 @@ const HubSectionFour = () => {
       <div className="container max-w-382.75 w-full mx-auto">
         <div className="row w-full lg:pt-37.25 lg:pb-40.25 md:py-20 sm:py-15 py-10">
           <div className="content flex flex-col items-center justify-center">
-            <h2 className="w-full px-4 text-center text-white opacity-80 tracking-[-0.02em] text-[clamp(16px,2vw,24px)]">
+            <h2
+              data-aos="fade-up"
+              className="w-full px-4 text-center text-white opacity-80 tracking-[-0.02em] text-[clamp(16px,2vw,24px)]"
+            >
               Trusted by hundreds of technology leaders from companies like
             </h2>
 
             <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1100"
               className="inf-slider mt-[clamp(20px,4vw,40px)] w-full overflow-hidden
                          mask-[linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]
                          [-webkit-mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]"

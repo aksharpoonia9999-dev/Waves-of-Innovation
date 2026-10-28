@@ -37,7 +37,6 @@
     rgba(255, 255, 255, 0.1) 98.21%
   );
 
-
   --background-image-purple-gradient: linear-gradient(
     90deg,
     rgba(142, 46, 224, 0) 0%,
@@ -268,6 +267,93 @@ body {
   .card-icon stop {
     transition: none;
     animation: none !important;
+  }
+}
+
+body {
+  overflow-x: clip;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+@keyframes glow-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-18px, 10px) scale(1.18);
+    opacity: 0.7;
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(142, 46, 224, 0);
+  }
+  50% {
+    box-shadow: 0 0 28px 2px rgba(142, 46, 224, 0.45);
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    translate: 0 16px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+.animate-float-slow-alt {
+  animation: float-slow 6s ease-in-out -3s infinite;
+}
+.animate-twinkle {
+  animation: twinkle 4s ease-in-out infinite;
+}
+.animate-glow-drift {
+  animation: glow-drift 7s ease-in-out infinite;
+}
+.animate-glow-pulse {
+  animation: glow-pulse 3.2s ease-in-out infinite;
+}
+.animate-pop-in {
+  animation: pop-in 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow,
+  .animate-float-slow-alt,
+  .animate-twinkle,
+  .animate-glow-drift,
+  .animate-glow-pulse,
+  .animate-pop-in {
+    animation: none;
   }
 }
 

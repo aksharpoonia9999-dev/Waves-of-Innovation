@@ -33,7 +33,7 @@ const BackToTop = () => {
         <button
           onClick={scrollToTop}
           aria-label="Back to top"
-          className="group fixed bottom-5 right-5 sm:bottom-7.5 sm:right-7.5 z-50 isolate flex size-[clamp(30px,5vw,50px)] cursor-pointer rotate-270 items-center justify-center overflow-hidden rounded-full border border-solid border-white28 bg-white3 text-white transition-all duration-300 ease-out hover:scale-110 hover:border-white/60 hover:shadow-[0_0_12px_#8e2ee055,0_0_32px_#8e2ee033] active:scale-95"
+          className="animate-pop-in group fixed bottom-5 right-5 sm:bottom-7.5 sm:right-7.5 z-50 isolate flex size-[clamp(30px,5vw,50px)] cursor-pointer rotate-270 items-center justify-center overflow-hidden rounded-full border border-solid border-white28 bg-white3 text-white transition-all duration-300 ease-out hover:scale-110 hover:border-white/60 hover:shadow-[0_0_12px_#8e2ee055,0_0_32px_#8e2ee033] active:scale-95"
         >
           <span className="absolute inset-0 -z-10 translate-y-full rounded-full bg-ppg transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-y-0" />
 

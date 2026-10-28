@@ -1,10 +1,12 @@
-
-const ParagraphOne = ({children , className = ""}) => {
+const ParagraphOne = ({ children, className = "", ...rest }) => {
   return (
-    <p className={`font-normal xl:leading-6.25 leading-120 text-white text-base ${className}`}>
+    <p
+      {...rest}
+      className={`font-normal xl:leading-6.25 leading-120 text-white text-base ${className}`}
+    >
       {children}
     </p>
-  )
-}
+  );
+};
 
-export default ParagraphOne
+export default ParagraphOne;
