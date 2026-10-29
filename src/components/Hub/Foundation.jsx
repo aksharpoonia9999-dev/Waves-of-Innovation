@@ -1,12 +1,12 @@
-import StarImg from "../../assets/svg/top-star.svg";
-import BookImg from "../../assets/webp/book.webp";
+import StarImg from "../../assets/img/svg/top-star.svg";
+import BookImg from "../../assets/img/webp/book.webp";
 import Badge from "../common/Badge";
 import ButtonHover from "../common/ButtonHover";
 import ButtonPurple from "../common/ButtonPurple";
 import HeadingTwo from "../common/HeadingTwo";
 import ParagraphOne from "../common/ParagraphOne";
 
-const HubSectionFive = () => {
+const Foundation = () => {
   return (
     <section className="min-h-fit xl:min-h-148 px-4 w-full relative">
       <div className="container max-w-334.5 w-full mx-auto">
@@ -16,7 +16,7 @@ const HubSectionFive = () => {
               width="467"
               height="157"
               src={StarImg}
-              className="animate-twinkle h-auto sm:h-39.25"
+              className="animate-twinkle h-auto sm:h-39.25 lg:h-39.25 lg:w-119.5"
               alt="star img top"
             />
           </div>
@@ -30,7 +30,7 @@ const HubSectionFive = () => {
                 src={BookImg}
                 width="575"
                 height="539"
-                className="animate-float-slow object-cover"
+                className="animate-float-slow object-cover lg:h-134.75 lg:w-143.75"
                 alt="book img"
               />
             </div>
@@ -81,4 +81,4 @@ const HubSectionFive = () => {
   );
 };
 
-export default HubSectionFive;
+export default Foundation;

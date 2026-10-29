@@ -1,21 +1,21 @@
 import Footer from "../components/common/Footer";
-import BottomSection from "../components/Hub/BottomSection";
-import HubSectionFive from "../components/Hub/HubSectionFive";
-import HubSectionFour from "../components/Hub/HubSectionFour";
-import HubSectionOne from "../components/Hub/HubSectionOne";
-import HubSectionSix from "../components/Hub/HubSectionSix";
-import HubSectionThree from "../components/Hub/HubSectionThree";
-import HubSectionTwo from "../components/Hub/HubSectionTwo";
+import Foundation from "../components/Hub/Foundation";
+import InnovativeEcosystem from "../components/Hub/InnovativeEcosystem";
+import NativeEra from "../components/Hub/NativeEra";
+import Navigate from "../components/Hub/Navigate";
+import PredictFuture from "../components/Hub/PredictFuture";
+import TrustedCompanies from "../components/Hub/TrustedCompanies";
+import Writers from "../components/Hub/Writers";
 const Hub = () => {
   return (
     <>
-      <HubSectionOne />
-      <HubSectionTwo />
-      <HubSectionThree />
-      <HubSectionFour />
-      <HubSectionFive />
-      <HubSectionSix />
-      <BottomSection />
+      <NativeEra />
+      <PredictFuture />
+      <InnovativeEcosystem />
+      <TrustedCompanies />
+      <Foundation />
+      <Writers />
+      <Navigate />
       <Footer />
     </>
   );

@@ -1,11 +1,11 @@
-import StarsImg from "../../assets/svg/bg-stars.svg";
+import StarsImg from "../../assets/img/svg/bg-stars.svg";
 import Badge from "../common/Badge";
 import HeadingTwo from "../common/HeadingTwo";
 import { HUB_CARD_DATA } from "../../utils/helper";
 import Icons from "../common/Icons";
 import ButtonHover from "../common/ButtonHover";
 
-const HubSectionThree = () => {
+const InnovativeEcosystem = () => {
   return (
     <section className="px-4 min-h-fit w-full">
       <div className="container max-w-320.25 w-full mx-auto">
@@ -27,7 +27,7 @@ const HubSectionThree = () => {
                 className="max-w-151.25 w-full text-center mt-3.25"
               >
                 Explore the Waves of Innovation Ecosy
-                <span className="text-[#E3CBF7]">stem</span>{" "}
+                <span className="text-pruple4">stem</span>{" "}
               </HeadingTwo>
             </div>
           </div>
@@ -87,4 +87,4 @@ const HubSectionThree = () => {
   );
 };
 
-export default HubSectionThree;
+export default InnovativeEcosystem;

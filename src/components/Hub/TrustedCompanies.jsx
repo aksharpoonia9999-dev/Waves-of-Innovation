@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Logo1 from "../../assets/webp/larsen.webp";
-import Logo2 from "../../assets/webp/seabo.webp";
-import Logo3 from "../../assets/webp/vandebron.webp";
-import Logo4 from "../../assets/webp/skanda.webp";
-import Logo5 from "../../assets/webp/fonix.webp";
-import Logo6 from "../../assets/webp/odevo.webp";
+import Logo1 from "../../assets/img/webp/larsen.webp";
+import Logo2 from "../../assets/img/webp/seabo.webp";
+import Logo3 from "../../assets/img/webp/vandebron.webp";
+import Logo4 from "../../assets/img/webp/skanda.webp";
+import Logo5 from "../../assets/img/webp/fonix.webp";
+import Logo6 from "../../assets/img/webp/odevo.webp";
 
 const logos = [
   { src: Logo1, alt: "Ole Larsen", w: 218, h: 78 },
@@ -39,7 +39,7 @@ const LogoGroup = ({ hidden = false, onEnter, onLeave }) => (
   </div>
 );
 
-const HubSectionFour = () => {
+const TrustedCompanies = () => {
   const [paused, setPaused] = useState(false);
 
   return (
@@ -84,4 +84,4 @@ const HubSectionFour = () => {
   );
 };
 
-export default HubSectionFour;
+export default TrustedCompanies;

@@ -6,14 +6,14 @@ import HeadingOne from "../common/HeadingOne";
 import ParagraphOne from "../common/ParagraphOne";
 import SectionOne from "../common/SectionOne";
 
-const HubSectionOne = () => {
+const NativeEra = () => {
   return (
     <>
       <SectionOne>
         <Header />
 
         <div className="container max-w-167.5 w-full mx-auto">
-          <div className="row w-full pt-20 lg:pt-40.75 lg:pb-42 md:pb-20 sm:pb-15 pb-10">
+          <div className="row w-full pt-20 lg:pt-40.75 lg:pb-42 md:pb-22.5 sm:pb-15 pb-12.5">
             <div className="content pt-7 w-full flex items-center justify-center flex-col">
               <Badge
                 data-aos="fade-down"
@@ -62,4 +62,4 @@ const HubSectionOne = () => {
   );
 };
 
-export default HubSectionOne;
+export default NativeEra;

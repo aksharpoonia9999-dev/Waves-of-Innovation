@@ -1,11 +1,11 @@
-import BgStarsImg from "../../assets/webp/writer-stars.webp";
-import WriterImgOne from "../../assets/svg/writer-1.svg";
-import WriterImgTwo from "../../assets/svg/writer-2.svg";
+import BgStarsImg from "../../assets/img/webp/writer-stars.webp";
+import WriterImgOne from "../../assets/img/svg/writer-1.svg";
+import WriterImgTwo from "../../assets/img/svg/writer-2.svg";
 import HeadingTwo from "../common/HeadingTwo";
 import ParagraphOne from "../common/ParagraphOne";
-import Line from "../../assets/svg/line.svg";
+import Line from "../../assets/img/svg/line.svg";
 
-const HubSectionSix = () => {
+const Writers = () => {
   return (
     <section className="min-h-fit xl:min-h-113 w-full px-4 xl:-mb-7.5">
       <div
@@ -78,4 +78,4 @@ const HubSectionSix = () => {
   );
 };
 
-export default HubSectionSix;
+export default Writers;

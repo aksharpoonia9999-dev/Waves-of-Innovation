@@ -1,4 +1,4 @@
-import BgImg from "../../assets/webp/bg-1.webp";
+import BgImg from "../../assets/img/webp/bg-1.webp";
 const SectionOne = ({ children }) => {
   return (
     <section

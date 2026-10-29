@@ -1,9 +1,9 @@
 import Badge from "../common/Badge";
 import HeadingTwo from "../common/HeadingTwo";
 import ParagraphOne from "../common/ParagraphOne";
-import GlobeImg from "../../assets/webp/globe.webp";
+import GlobeImg from "../../assets/img/webp/globe.webp";
 
-const HubSectionTwo = () => {
+const PredictFuture = () => {
   return (
     <section className="min-h-fit px-4 w-full xl:-mt-37.5">
       <div className="container max-w-291.5 w-full mx-auto">
@@ -21,7 +21,7 @@ const HubSectionTwo = () => {
               className="mt-3.25 relative lg:text-left text-center"
             >
               Don't Predict the Future. Map It With Patt
-              <span className="text-[#D9B8F5]">erns.</span>
+              <span className="text-purple2">erns.</span>
             </HeadingTwo>
             <ParagraphOne
               data-aos="fade-right"
@@ -55,7 +55,7 @@ const HubSectionTwo = () => {
               height="480"
               src={GlobeImg}
               alt="globe"
-              className="animate-float-slow"
+              className="animate-float-slow lg:h-120 lg:w-150"
             />
           </div>
         </div>
@@ -64,4 +64,4 @@ const HubSectionTwo = () => {
   );
 };
 
-export default HubSectionTwo;
+export default PredictFuture;

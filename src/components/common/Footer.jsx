@@ -1,5 +1,5 @@
 import ButtonPurple from "../common/ButtonPurple";
-import logo from "../../assets/svg/logo.svg";
+import logo from "../../assets/img/svg/logo.svg";
 
 const headingClass =
   "text-[clamp(1.125rem,1.04rem+0.4vw,1.25rem)] leading-tight font-medium break-words xl:whitespace-nowrap";

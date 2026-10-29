@@ -1,9 +1,9 @@
-import BgImg from "../../assets/webp/purple-bg.webp";
+import BgImg from "../../assets/img/webp/purple-bg.webp";
 import Badge from "../common/Badge";
 import HeadingTwo from "../common/HeadingTwo";
 import ParagraphOne from "../common/ParagraphOne";
 
-const BottomSection = () => {
+const Navigate = () => {
   return (
     <section
       style={{ backgroundImage: `url(${BgImg})` }}
@@ -21,8 +21,8 @@ const BottomSection = () => {
           data-aos-delay="100"
           className="text-center w-full mt-3.25 leading-120 xl:leading-16.25 font-normal!"
         >
-          Ready to Navigate the Next W<span className="text-[#DBBCF5]">a</span>
-          <span className="text-[#D1ABF3]">ve?</span>
+          Ready to Navigate the Next W<span className="text-purple2">a</span>
+          <span className="text-pruple3">ve?</span>
         </HeadingTwo>
 
         <ParagraphOne
@@ -51,4 +51,4 @@ const BottomSection = () => {
   );
 };
 
-export default BottomSection;
+export default Navigate;
