@@ -1,4 +1,4 @@
-import StarsImg from "../../assets/img/svg/bg-stars.svg";
+import StarsImg from "../../assets/img/Hub/svg/bg-stars.svg";
 import Badge from "../common/Badge";
 import HeadingTwo from "../common/HeadingTwo";
 import { HUB_CARD_DATA } from "../../utils/helper";
@@ -15,17 +15,10 @@ const InnovativeEcosystem = () => {
             style={{ backgroundImage: `url(${StarsImg})` }}
           >
             <div className="top-content max-w-151.25 w-full mx-auto flex items-center justify-center flex-col">
-              <Badge
-                data-aos="fade-down"
-                className="w-37.5 p-0! h-7.25 text-nowrap items-center justify-center"
-              >
+              <Badge className="w-37.5 p-0! h-7.25 text-nowrap items-center justify-center">
                 Waves of Innovation
               </Badge>
-              <HeadingTwo
-                data-aos="fade-up"
-                data-aos-delay="100"
-                className="max-w-151.25 w-full text-center mt-3.25"
-              >
+              <HeadingTwo className="max-w-151.25 w-full text-center mt-3.25">
                 Explore the Waves of Innovation Ecosy
                 <span className="text-pruple4">stem</span>{" "}
               </HeadingTwo>
@@ -34,12 +27,7 @@ const InnovativeEcosystem = () => {
 
           <div className="bottom-cards w-full grid grid-cols-1 min-[560px]:grid-cols-2 lg:grid-cols-3 gap-x-[clamp(12px,1.75vw,21px)] gap-y-[clamp(12px,1.75vw,20px)] mt-[clamp(30px,5vw,60px)]">
             {HUB_CARD_DATA.map((obj, idx) => (
-              <div
-                key={idx}
-                data-aos="fade-up"
-                data-aos-delay={(idx % 3) * 120}
-                className="h-full"
-              >
+              <div key={idx} className="h-full">
                 <div className="card group relative isolate overflow-hidden flex flex-col justify-between w-full h-full min-w-0 cursor-pointer bg-white3 border border-solid border-white12 rounded-[clamp(14px,1.8vw,20px)] px-[clamp(16px,2vw,20px)] pb-[clamp(16px,2vw,20px)] pt-[clamp(16px,2vw,32px)] transition-[background-color,border-color,box-shadow,translate] duration-500 hover:-translate-y-1 hover:bg-white-tp hover:border-white28 hover:shadow-[0_0_60px_-20px_rgba(142,46,224,0.55)]">
                   <span
                     aria-hidden="true"

@@ -2,16 +2,53 @@
 
 @theme {
   --color-white-tp: #ffffff0f;
+  --color-white0: rgb(255 255 255 / 0);
+  --color-white8: rgb(255 255 255 / 0.08);
+  --color-white10: rgb(255 255 255 / 0.1);
+  --color-white30: rgb(255 255 255 / 0.3);
+  --color-white60: rgb(255 255 255 / 0.6);
   --color-white28: #ffffff47;
   --color-white3: #ffffff08;
   --color-white12: #ffffff1f;
   --color-border28: #393539;
+  --color-gray60: #14141499;
+  --color-light-gray: #bdbdbd;
+  --color-gray-border: #696869;
   --color-primary-purple: #8e2ee0;
   --color-purple1: #d9b8f5;
   --color-purple2: #dbbcf5;
   --color-pruple3: #d1abf3;
   --color-pruple4: #e3cbf7;
   --color-pruple5: #dabaf5;
+  --color-purple6: #ebd9f9;
+  --color-purple7: #e0c6f7;
+  --color-purple8: #d9b9f5;
+  --color-purple9: #e6cff7;
+  --color-purple10: #e1c7f7;
+  --color-purple11: #d6b3f3;
+  --color-purple12: #d7b5f4;
+  --color-purple13: #e2c9f7;
+  --color-purple14: #eddefa;
+  --color-purple15: #f1e5fb;
+  --color-purple16: #edddfa;
+  --color-purple17: #e3caf7;
+  --color-purple18: #f4ebfc;
+  --color-purple19: #f2e6fb;
+  --color-purple20: #e4cef8;
+  --color-purple21: #d9baf5;
+  --color-purple22: #d0a9f2;
+  --color-purple23: #cb9ef0;
+  --color-purple24: #e6d1f8;
+  --color-purple25: #dbbdf5;
+  --color-purple26: #cda2f1;
+  --color-purple27: #e7caff;
+  --color-purple28: #cd93ff;
+  --color-purple29: #f0e4fb;
+  --color-purple30: #e4cdf8;
+  --color-purple31: #dcbef5;
+  --color-purple32: #eedffa;
+  --color-purple33: #e0c6f6;
+
   --color-lav: #f0d9ff;
 
   --radius-20: 20px;
@@ -375,4 +412,243 @@ body {
 
 .animate-marquee {
   animation: marquee 30s linear infinite;
+}
+
+.ep-card {
+  isolation: isolate;
+}
+
+.ep-backdrop {
+  position: absolute;
+  left: 11px;
+  top: -72px;
+  width: 492px;
+  height: 235.3px;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse closest-side,
+    var(--color-primary-purple) 0%,
+    rgb(142 46 224 / 0) 100%
+  );
+  filter: blur(132px);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.ep-glow {
+  position: absolute;
+  inset: -1px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.ep-glow > span {
+  position: absolute;
+  left: var(--l);
+  top: var(--t);
+  width: var(--w);
+  height: var(--h);
+  border-radius: 50%;
+  background: var(--c);
+  filter: blur(var(--b));
+}
+/* purple ellipses */
+.ep-glow > span:nth-child(1) {
+  --l: 148.76px;
+  --t: -136.02px;
+  --w: 389.92px;
+  --h: 238.92px;
+  --c: var(--color-primary-purple);
+  --b: 80.55px;
+}
+.ep-glow > span:nth-child(2) {
+  --l: 178.1px;
+  --t: -127.29px;
+  --w: 330.96px;
+  --h: 221.47px;
+  --c: var(--color-primary-purple);
+  --b: 29.44px;
+}
+.ep-glow > span:nth-child(3) {
+  --l: 200.37px;
+  --t: -89.94px;
+  --w: 286.42px;
+  --h: 146.76px;
+  --c: var(--color-primary-purple);
+  --b: 23.7px;
+}
+.ep-glow > span:nth-child(4) {
+  --l: 218.57px;
+  --t: -63.26px;
+  --w: 250.6px;
+  --h: 93.39px;
+  --c: #fff;
+  --b: 38.7px;
+}
+.ep-glow > span:nth-child(5) {
+  --l: 248.94px;
+  --t: -52.14px;
+  --w: 189.85px;
+  --h: 71.14px;
+  --c: #fff;
+  --b: 29.7px;
+}
+.ep-glow > span:nth-child(6) {
+  --l: 292.62px;
+  --t: -35.77px;
+  --w: 102.5px;
+  --h: 38.41px;
+  --c: #fff;
+  --b: 10px;
+}
+.ep-glow > span:nth-child(7) {
+  left: 120.13px;
+  top: -164.96px;
+  width: 381.51px;
+  height: 305.73px;
+  border-radius: 0;
+  filter: none;
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.3) 1px, transparent 1px);
+  background-size: 6px 6px;
+  background-position: 2.5px 2.5px;
+  -webkit-mask-image: radial-gradient(
+    ellipse closest-side,
+    #000 0%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(ellipse closest-side, #000 0%, transparent 100%);
+}
+
+.ep-ring {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  border-radius: 20px;
+  padding: 1px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background: linear-gradient(
+    206.57deg,
+    #fff 5.82%,
+    rgb(255 255 255 / 0.12) 16.6%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+}
+
+@media (hover: hover) {
+  .ep-card:hover .ep-glow {
+    opacity: 1;
+  }
+  .ep-card:hover .ep-ring {
+    opacity: 1;
+  }
+  .ep-card:hover .ep-backdrop {
+    opacity: 0.6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ep-glow,
+  .ep-ring,
+  .ep-backdrop {
+    transition: none;
+  }
+}
+
+/* ===== "Inside Every Episode" cards ===== */
+
+/* animatable colours for the 01–06 numbers (gradients can't transition, colours can) */
+@property --ep-num-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: rgb(255 255 255 / 0.08);
+}
+@property --ep-num-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: rgb(255 255 255 / 0);
+}
+
+.ep-num {
+  --ep-num-from: var(--color-white8);
+  --ep-num-to: var(--color-white0);
+  background-image: linear-gradient(
+    to bottom,
+    var(--ep-num-from) 0%,
+    var(--ep-num-to) 91.039%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition:
+    --ep-num-from 0.5s ease,
+    --ep-num-to 0.5s ease;
+}
+
+/* icon: idle (grey) layer + hover (purple) layer, cross-faded */
+.ep-icon {
+  filter: drop-shadow(0 4px 54px transparent);
+  transition: filter 0.5s ease;
+}
+.ep-icon-base,
+.ep-icon-hot {
+  transition: opacity 0.5s ease;
+}
+.ep-icon-hot {
+  opacity: 0;
+}
+.ep-stop-base-start {
+  stop-color: var(--color-white30);
+}
+.ep-stop-base-end {
+  stop-color: var(--color-white0);
+}
+.ep-stop-hot-1 {
+  stop-color: var(--color-white);
+}
+.ep-stop-hot-2 {
+  stop-color: var(--color-purple27);
+}
+.ep-stop-hot-3 {
+  stop-color: var(--color-purple28);
+}
+.ep-stop-hot-4 {
+  stop-color: var(--color-primary-purple);
+}
+
+@media (hover: hover) {
+  .ep-card:hover .ep-num {
+    --ep-num-from: var(--color-white60);
+    --ep-num-to: var(--color-white10);
+  }
+  .ep-card:hover .ep-icon {
+    filter: drop-shadow(0 4px 54px var(--color-primary-purple));
+  }
+  .ep-card:hover .ep-icon-base {
+    opacity: 0;
+  }
+  .ep-card:hover .ep-icon-hot {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ep-num,
+  .ep-icon,
+  .ep-icon-base,
+  .ep-icon-hot {
+    transition: none;
+  }
 }

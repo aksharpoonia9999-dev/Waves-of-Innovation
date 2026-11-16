@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import LogoImg from "../../assets/img/svg/logo.svg";
+import LogoImg from "../../assets/img/Hub/svg/logo.svg";
 import Icons from "./Icons";
+import { Link } from "react-router-dom";
 
 const NAVDATA = [
   { title: "Home", url: "#" },
@@ -11,9 +12,9 @@ const NAVDATA = [
 ];
 
 const INNOVATIONDATA = [
-  { title: "Hub", url: "#" },
-  { title: "Podcast", url: "#" },
-  { title: "Services", url: "#" },
+  { title: "Hub", url: "/" },
+  { title: "Podcast", url: "/podcast" },
+  { title: "Monthly Report", url: "/monthly-report" },
 ];
 
 const MenuIcon = () => (
@@ -49,7 +50,7 @@ const CloseIcon = () => (
   </svg>
 );
 
-const Header = () => {
+const Header = ({ className = "" }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isInnovationOpen, setIsInnovationOpen] = useState(false);
   const [isMobileInnovationOpen, setIsMobileInnovationOpen] = useState(false);
@@ -89,7 +90,9 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-2.5 md:top-5.5 z-30 box-border w-full max-w-full px-4 xl:px-0">
+    <header
+      className={`fixed inset-x-0 top-2.5 md:top-5.5 z-30 box-border w-full max-w-full px-4 xl:px-0 ${className}`}
+    >
       <nav className="relative mx-auto flex h-12.75 w-full min-w-0 max-w-7xl items-center justify-between rounded-90 border border-solid border-white28 bg-white-tp py-[11.5px] pl-5 pr-3 backdrop-blur-3xl min-[1072px]:pr-1.5 before:absolute before:-inset-px before:-z-10 before:rounded-90 before:bg-white-tp">
         {/* LOGO */}
         <div className="logo shrink-0">
@@ -155,14 +158,14 @@ const Header = () => {
               }`}
             >
               {INNOVATIONDATA.map((item) => (
-                <a
+                <Link
                   key={item.title}
-                  href={item.url}
+                  to={item.url}
                   onClick={() => setIsInnovationOpen(false)}
                   className="block rounded-xl px-4 py-3 text-sm text-white/80 transition-colors duration-200 hover:bg-white/5 hover:text-pruple5"
                 >
                   {item.title}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -289,15 +292,15 @@ const Header = () => {
             <div className="overflow-hidden">
               <div className="flex flex-col gap-2 border-l border-white/10 pl-4">
                 {INNOVATIONDATA.map((item) => (
-                  <a
+                  <Link
                     key={item.title}
-                    href={item.url}
+                    to={item.url}
                     onClick={closeMobileMenu}
                     tabIndex={isMobileInnovationOpen ? 0 : -1}
                     className="py-2 text-sm text-white/70 transition-colors hover:text-pruple5"
                   >
                     {item.title}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

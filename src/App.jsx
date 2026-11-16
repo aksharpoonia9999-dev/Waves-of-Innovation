@@ -3,6 +3,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import AOS from "aos";
 import Hub from "./views/Hub";
 import BackToTop from "./components/common/BackToTop";
+import Podcast from "./views/Podcast";
+import SingleEpisode from "./components/Podcast/SingleEpisode";
+import MonthlyReport from "./views/MonthlyReport";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -30,7 +33,9 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<Hub />} />
-        <Route path="/podcast" element={<div>Podcast Page</div>} />
+        <Route path="/podcast" element={<Podcast />} />
+        <Route path="/episodes/:slug" element={<SingleEpisode />} />
+        <Route path="/monthly-report" element={<MonthlyReport />} />
       </Routes>
       <BackToTop />
     </>

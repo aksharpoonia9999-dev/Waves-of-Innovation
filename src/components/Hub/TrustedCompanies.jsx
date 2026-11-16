@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Logo1 from "../../assets/img/webp/larsen.webp";
-import Logo2 from "../../assets/img/webp/seabo.webp";
-import Logo3 from "../../assets/img/webp/vandebron.webp";
-import Logo4 from "../../assets/img/webp/skanda.webp";
-import Logo5 from "../../assets/img/webp/fonix.webp";
-import Logo6 from "../../assets/img/webp/odevo.webp";
+import Logo1 from "../../assets/img/Hub/webp/larsen.webp";
+import Logo2 from "../../assets/img/Hub/webp/seabo.webp";
+import Logo3 from "../../assets/img/Hub/webp/vandebron.webp";
+import Logo4 from "../../assets/img/Hub/webp/skanda.webp";
+import Logo5 from "../../assets/img/Hub/webp/fonix.webp";
+import Logo6 from "../../assets/img/Hub/webp/odevo.webp";
 
 const logos = [
   { src: Logo1, alt: "Ole Larsen", w: 218, h: 78 },
@@ -48,16 +48,13 @@ const TrustedCompanies = () => {
         <div className="row w-full lg:pt-37.25 lg:pb-40.25 md:py-20 sm:py-15 py-10">
           <div className="content flex flex-col items-center justify-center">
             <h2
-              data-aos="fade-up"
               className="w-full px-4 text-center text-white opacity-80 tracking-[-0.02em] text-[clamp(16px,2vw,24px)]"
             >
               Trusted by hundreds of technology leaders from companies like
             </h2>
 
             <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="1100"
+              
               className="inf-slider mt-[clamp(20px,4vw,40px)] w-full overflow-hidden
                          mask-[linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]
                          [-webkit-mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]"
